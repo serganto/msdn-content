@@ -12,82 +12,27 @@ Each Visual C++ Redistributable Package checks for the existence of a more recen
 
 If you use a merge module that contains a Visual C++ DLL, you must include it in the Windows Installer package (or similar installation package) that you are using to deploy the application. For more information, see [Redistributing Components By Using Merge Modules][5]. For an example, see [Walkthrough: Deploying a Visual C++ Application By Using a Setup Project][6], which also shows how to use InstallShield Limited Edition to create an installation package.
 
-| 
+| Title        | Description    |
+| :------------- |:-------------|
+| [Redistributing Components By Using Merge Modules][7]   | Describes how to use Visual C++ redistributable merge modules to install the Visual C++ runtime libraries as shared DLLs in the %windir%\system32\ folder. |
+| [Redistributing Visual C++ ActiveX Controls][8]      | Describes how to redistribute an application that uses ActiveX Controls.      |
+| [Redistributing Database Support Files][9] | Discusses how to redistribute support files for Data Access Objects (DAO) and the database technologies in the Microsoft Data Access SDK.    |
+| [Redistributing the MFC Library][10] | Describes how to redistribute an application that uses MFC.      |
+| [Redistributing an ATL application][11] | Describes how to redistribute an application that uses ATL. Starting in Visual Studio 2012, no redistributable library for ATL is required.      |
+| [Deployment Examples][12] | Links to examples that demonstrate how to deploy Visual C++ applications.      |
+| [Deploying Native Desktop Applications (Visual C++)][13] | Introduces Visual C++ deployment concepts and technologies.      |
 
-Title
-
- | 
-
-Description
-
- |
-| 
-
-[Redistributing Components By Using Merge Modules](https://msdn.microsoft.com/en-us/library/ms235290.aspx)
-
- | 
-
-Describes how to use Visual C++ redistributable merge modules to install the Visual C++ runtime libraries as shared DLLs in the %windir%\system32\ folder.
-
- |
-| 
-
-[Redistributing Visual C++ ActiveX Controls](https://msdn.microsoft.com/en-us/library/4kbye0ax.aspx)
-
- | 
-
-Describes how to redistribute an application that uses ActiveX Controls.
-
- |
-| 
-
-[Redistributing Database Support Files](https://msdn.microsoft.com/en-us/library/fse6sb94.aspx)
-
- | 
-
-Discusses how to redistribute support files for Data Access Objects (DAO) and the database technologies in the Microsoft Data Access SDK.
-
- |
-| 
-
-[Redistributing the MFC Library](https://msdn.microsoft.com/en-us/library/ms235264.aspx)
-
- | 
-
-Describes how to redistribute an application that uses MFC.
-
- |
-| 
-
-[Redistributing an ATL application](https://msdn.microsoft.com/en-us/library/ms235284.aspx)
-
- | 
-
-Describes how to redistribute an application that uses ATL. Starting in Visual Studio 2012, no redistributable library for ATL is required.
-
- |
-| 
-
-[Deployment Examples](https://msdn.microsoft.com/en-us/library/ms235285.aspx)
-
- | 
-
-Links to examples that demonstrate how to deploy Visual C++ applications.
-
- |
-| 
-
-[Deploying Native Desktop Applications (Visual C++)](https://msdn.microsoft.com/en-us/library/zebw5zk9.aspx)
-
- | 
-
-Introduces Visual C++ deployment concepts and technologies.
-
- |
- 
 [1]: http://go.microsoft.com/fwlink/p/?LinkId=313603
 [2]: https://msdn.microsoft.com/en-us/library/8kche8ah.aspx
 [3]: https://msdn.microsoft.com/en-us/library/ms235285.aspx
 [4]: https://msdn.microsoft.com/en-us/library/dd293575.aspx
 [5]: https://msdn.microsoft.com/en-us/library/ms235290.aspx
 [6]: https://msdn.microsoft.com/en-us/library/dd293568.aspx
+
+[7]: https://msdn.microsoft.com/en-us/library/ms235290.aspx
+[8]: https://msdn.microsoft.com/en-us/library/ms235290.aspx
+[9]: https://msdn.microsoft.com/en-us/library/fse6sb94.aspx
+[10]: https://msdn.microsoft.com/en-us/library/fse6sb94.aspx
+[11]: https://msdn.microsoft.com/en-us/library/ms235284.aspx
+[12]: https://msdn.microsoft.com/en-us/library/ms235284.aspx
+[13]: https://msdn.microsoft.com/en-us/library/zebw5zk9.aspx
