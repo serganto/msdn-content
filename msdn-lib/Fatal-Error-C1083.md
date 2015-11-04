@@ -66,7 +66,7 @@ The following example generates a C1083 error.
 For information about how to build C/C++ projects in the IDE or on the command line, and information about setting environment variables, see [Building C/C++ Programs][10].
 
 ##See Also
-[MSBuild Properties][12]
+[MSBuild Properties][11]
 
 [1]: https://msdn.microsoft.com/en-us/library/36k2cdd4.aspx
 [2]: https://msdn.microsoft.com/en-us/library/8etzzkb6.aspx
