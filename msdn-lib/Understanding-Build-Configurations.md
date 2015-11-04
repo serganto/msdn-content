@@ -19,6 +19,8 @@ Each entry in the **Project contexts** box in a solution configuration represent
 
 The active solution configuration also provides context to the IDE. For example, if you're working on a project and the configuration specifies that it will be built for a mobile device, the **Toolbox** displays only items that can be used in a mobile device project.
 
+##Project Configurations
+
 The configuration and platform that a project targets are used together to specify the properties to use when it's built. A project can have a different set of property definitions for each combination of configuration and platform. To modify the properties of a project, you can use its Property Pages. (In **Solution Explorer**, open the shortcut menu for the project and then choose **Properties**.)
 
 For each project configuration, you can define configuration-dependent properties as needed. For example, for a particular build, you can set which project items will be included, and what output files will be created, where they will be put, and how they will be optimized.
@@ -29,6 +31,8 @@ Project configurations are stored by solution—not by user—so that they can b
 
 Although project dependencies are configuration-independent, only the projects that are specified in the active solution configuration will be built.
 
+##How Visual Studio Assigns Project Configurations
+
 When you define a new solution configuration and don't copy settings from an existing one, Visual Studio uses the following criteria to assign default project configurations. The criteria are evaluated in the order shown.
 
 1. If a project has a configuration name (_<configuration name=""> <platform name="">_) that exactly matches the name of the new solution configuration, that configuration is assigned. Configuration names are not case-sensitive.
@@ -37,15 +41,33 @@ When you define a new solution configuration and don't copy settings from an exi
 
 3. If there is still no match, the first configuration that's listed in the project is assigned.
 
+##How Visual Studio Assigns Solution Configurations
 When you create a project configuration (in the **Configuration Manager**, by choosing **New** on the drop-down menu in the **Configuration** column for that project) and select the **Create new solution configurations** check box, Visual Studio looks for a like-named solution configuration to build the project on each platform it supports. In some cases, Visual Studio renames existing solution configurations or defines new ones.
 
 Visual Studio uses the following criteria to assign solution configurations.
 
-* If a project configuration doesn't specify a platform or specifies just one platform, then a solution configuration whose name matches that of the new project configuration is either found or added. The default name of this solution configuration does not include a platform name; it takes the form _<project configuration="" name="">_.
-* If a project supports multiple platforms, a solution configuration is either found or added for each supported platform. The name of each solution configuration includes both the project configuration name and the platform name, and has the form _<project configuration="" name=""> <platform name="">_.
+* If a project configuration doesn't specify a platform or specifies just one platform, then a solution configuration whose name matches that of the new project configuration is either found or added. The default name of this solution configuration does not include a platform name; it takes the form `_<project configuration="" name="">_.`
+* If a project supports multiple platforms, a solution configuration is either found or added for each supported platform. The name of each solution configuration includes both the project configuration name and the platform name, and has the form `_<project configuration="" name=""> <platform name="">_`.
+
+##See Also
+[Walkthrough: Building an Application][6]
+
+[Compiling and Building in Visual Studio][7]
+
+[Solutions and Projects in Visual Studio][8]
+
+[C/C++ Building Reference][9]
+
+[Devenv Command Line Switches][10]
 
 [1]: https://i-msdn.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635810750817785875
 [2]: https://msdn.microsoft.com/en-us/library/vstudio/wx0123s5.aspx
 [3]: https://msdn.microsoft.com/en-us/library/vstudio/kwybya3w.aspx
 [4]: https://msdn.microsoft.com/en-us/library/vstudio/ms165407.aspx
 [5]: https://i-msdn.sec.s-msft.com/dynimg/IC101471.jpeg "System_CAPS_note"
+
+[6]: https://msdn.microsoft.com/en-us/library/vstudio/jj730426.aspx
+[7]: https://msdn.microsoft.com/en-us/library/vstudio/cyz1h6zd.aspx
+[8]: https://msdn.microsoft.com/en-us/library/vstudio/b142f8e7.aspx
+[9]: https://msdn.microsoft.com/en-us/library/vstudio/91621w01.aspx
+[10]: https://msdn.microsoft.com/en-us/library/vstudio/xee0c8y7.aspx
