@@ -25,7 +25,7 @@ After you set up the configurations you want, you can set project properties tha
 
 * In **Solution Explorer**, open the shortcut menu for a project and then choose **Properties**.
 
-The ** Property Pages** window opens.
+The **Property Pages** window opens.
 
 You can set properties for your configurations. For example, for a Release configuration, you can specify that code is optimized when the solution is built, and for a Debug configuration, you can specify that the DEBUG conditional compilation symbol is included. For more information about property page settings, see [Introduction to the Project Designer][4].
 
