@@ -2,10 +2,6 @@
 
 # Installing and Configuring Test Agents and Test Controllers
 
-** Visual Studio 2015 **
-
-![][1]
-
 For test scenarios using Visual Studio 2015 and Visual Studio Online (VSO) or Team Foundation Server (TFS) 2015, you won't need a test controller because Agents for Microsoft Visual Studio 2015 handle orchestration by communicating with VSO or TFS 2015. For example, you're running automated tests with your build and release workflows in VSO or TFS 2015.
 
 If you need your test agent or test controller to work with TFS 2013, use Agents for Microsoft Visual Studio 2013 Update 5 and configure the test controller.
