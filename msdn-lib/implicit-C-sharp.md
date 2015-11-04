@@ -54,7 +54,7 @@ For more information, see the [C# Language Specification][2]. The language speci
 
 [4]: https://msdn.microsoft.com/en-us/library/618ayhy6.aspx
 [5]: https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx
-[6]: https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx
+[6]: https://msdn.microsoft.com/en-us/library/x53a06bb.aspx
 [7]: https://msdn.microsoft.com/en-us/library/xhbhezf4.aspx
 [8]: https://msdn.microsoft.com/en-us/library/s53ehcz3.aspx
 [9]: https://msdn.microsoft.com/en-us/library/s53ehcz3.aspx
