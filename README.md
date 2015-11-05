@@ -37,3 +37,4 @@ If you are looking for content to contribute to, there is a number of articles t
 |User Input Validation in Windows Forms|[Open](msdn-lib/User-Input-Validation-in-Windows-Forms.md)|
 |How to: Bind a Windows Forms ComboBox or ListBox Control to Data|[Open](msdn-lib/How-to-Bind-a-Windows-Forms-ComboBox-or-ListBox-Control-to-Data.md)|
 |How to: Add Load, Save, and Cancel Buttons to the Windows Forms BindingNavigator Control|[Open](msdn-lib/How-to-add-Load-Save-and-Cancel-Buttons-to-the-Windows-Forms-BindingNavigator-Control.md)|
+|How to: Select an Item in the Windows Forms ListView Control|[Open](msdn-lib/How-to-select-an-item-in-the-Windows-Forms-ListView-Control.md)|
