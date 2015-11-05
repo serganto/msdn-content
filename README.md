@@ -4,6 +4,7 @@ Community content proposals for MSDN.
 ##MVP Summit Hackathon - Priority Focus Content
 If you are looking for content to contribute to, there is a number of articles that require immediate attention. Check out the following:
 
+###Visual Studio
 |  Article  |  Link  |
 | :------ | :------ |
 | How to: Enable Debugging for ASP.NET Applications| [Open](msdn-lib/How-to-Enable-Debugging-for-ASP-NET-Applications.md)|
@@ -24,6 +25,10 @@ If you are looking for content to contribute to, there is a number of articles t
 |Compiler Error CS0246|[Open](msdn-lib/Compiler-Error-CS0246.md)|
 |Debugging DLL Projects|[Open](msdn-lib/Debugging-DLL-Projects.md)|
 |Installing and Configuring Test Agents and Test Controllers|[Open](msdn-lib/Installing-and-Configuring-Test-Agents-and-Test-Controllers.md)|
-|Understanding Build Configurations|[Open](msdn-lib/Installing-and-Configuring-Test-Agents-and-Test-Controllers.md)|
+|Understanding Build Configurations|[Open](msdn-lib/Understanding-Build-Configurations.md)|
 |How to: Change the Build Output Directory|[Open](msdn-lib/How-to-Change-the-Build-Output-Directory.md)|
 |Toolbox|[Open](msdn-lib/Toolbox.md)|
+
+###WinForms
+|  Article  |  Link  |
+| :------ | :------ |
