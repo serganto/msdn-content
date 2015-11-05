@@ -38,7 +38,7 @@ More information about synchronization contexts can be found [here][6]. A good e
 
 #### **await** default behavior in terms of synchronization context
 
-**await** significantly simplifies asynchronous programming, but it is important to understand its behavior in terms of synchronization context, because improper use can lead to unpredictable code behavior, such as weird unhandled exceptions, especially in multi-threaded GUI applications.
+**await** significantly simplifies asynchronous programming, but it is important to understand its behavior in terms of synchronization context, because improper use can lead to weird behavior, such as unhandled exceptions and deadlocks.
 
 A good explanation of async programming can be found [in this article][8].
 
@@ -46,7 +46,7 @@ By default, if we use **await** when running a [Task][9] instance, it first capt
 
 #### Executing in the same context can be undesirable
 
-In some cases the same context execution can be undesirable because it can produce deadlocks situations. Consider the following C# code example which shows what happens if you block synchronous code on task execution:
+In some cases the same context execution can be undesirable because it can produce deadlocks situations. Consider the following C# code example which shows what happens if you block asynchronous code:
 
 ```
 public static class Example
@@ -67,13 +67,13 @@ The demo is for Windows Forms application, but it will show the problem in any U
 
 The problem is an UI application has default synchronization context which allows to execute only one piece of code simultaneously. So what happens in the example is that **Task.Delay()** is executed and it is waiting for UI synchronization context to be free to continue execution in the context. But simultaneously **DelayTask.Wait()** blocks the same context waiting for **Task.Delay()** to be finished. So we have a deadlock situation here.
 
-You can follow [here][10] for a real-world sample and even more detailed explanation.
+You can follow [here][10] for a real-world example and even more detailed explanation.
 
-Notice: the code won't produce any issues in a console application because of different context management. Console applications have synchronization context which allows to run multiple code units at one time.
+Notice: the code won't produce any issues in a console application because console applications have synchronization context which allows to run multiple code units at one time.
 
-There are two ways to fix the problem. We either use await everywhere in the code instead of synchronous blocks or use **ConfigureAwait(false)** to avoid executing the continuation in the same context.
+There are two ways to fix the problem. We either use await everywhere in the code instead of blocking or use **ConfigureAwait(false)** to avoid executing the continuation in the same context.
 
-So both code samples below will solve the issue.
+So both code examples below will solve the issue.
 
 ```
 public static class Example
@@ -105,16 +105,16 @@ public static class Example
 }
 ```
 
-When we use **ConfigureAwait(false)** we explicitly say not to continue the execution for **Task.Delay()** call in the same context.
+When we use **ConfigureAwait(false)** we explicitly say not to continue the execution for **Task.Delay()** call in the same context thus avoiding the deadlock.
 
 #### Typical usage
 
-1. As mentioned before, the main use case is to avoid any deadlocks.
+1. As mentioned before, the main usage is to avoid any deadlocks.
 2. Executing continuation in the same context in GUI apps can produce performance issues in case of intensive use of asynchronous calls because all continuations will be forwarded to single UI thread. **ConfigureAwait(false)** can solve the problem as well.
 
 #### Use cases
 
-The Azure Machine Learning request/response web service example contains the following code to avoid a deadlock:
+The Azure Machine Learning request/response web service example contains the following code comments which explain the way to avoid deadlock:
 
 ```
 // WARNING: The 'await' statement below can result in a deadlock if you are calling this code from the UI thread of an ASP.Net application.
@@ -123,6 +123,7 @@ The Azure Machine Learning request/response web service example contains the fol
 //      result = await DoSomeTask()
 // with the following:
 //      result = await DoSomeTask().ConfigureAwait(false)
+HttpResponseMessage response = await client.PostAsJsonAsync("", scoreRequest);
 ```
 
 ##Version Information
