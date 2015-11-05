@@ -208,7 +208,7 @@ To compile the code, create an ASP.NET Web page without a code-behind. Then cop
 
 To prevent a user from injecting script into the HTML stream, user input should never be directly echoed back in the server response. Instead, it should be encoded by using the [HttpServerUtility.HtmlEncode](https://msdn.microsoft.com/en-us/library/w3te6wfz(v=vs.110).aspx) method.
 
-## [See Also]()
+## See Also
 
 [Performing Formatting Operations](https://msdn.microsoft.com/en-us/library/bb762912(v=vs.110).aspx)  
 [Standard Date and Time Format Strings](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)  

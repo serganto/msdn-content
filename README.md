@@ -46,3 +46,6 @@ If you are looking for content to contribute to, there is a number of articles t
 |IEnumerable Interface|[Open](msdn-lib/IEnumerable.md)|
 |How to: Read Text from a File|[Open](msdn-lib/How-to-Read-from-a-File.md)|
 |How to: Display Localized Date and Time Information to Web Users|[Open](msdn-lib/How-to-Display-Localized-Date-and-Time-Information-to-Web-Users.md)|
+|How To: Write User Settings at Run Time with C#|[Open](msdn-lib/How-to-write-user-settings-at-runtime-with-c.md)|
+|Task.ConfigureAwait Method (Boolean)|[Open](msdn-lib/Task-ConfigureAwait-Method-Boolean.md)|
+|HttpRequest.Cookies Property|[Open](msdn-lib/HttpRequest-Cookies-Property.md)|
