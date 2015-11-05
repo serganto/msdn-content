@@ -23,10 +23,22 @@ Type: [System.Boolean][3]
 
 **true** to attempt to marshal the continuation back to the original context captured; otherwise, **false**.
 
-####Return Value
+#### Return Value
 Type: [System.Runtime.CompilerServices.ConfiguredTaskAwaitable][5]
 
 An object used to await this task.
+
+## Remarks
+
+#### SynchronizationContext
+Every thread has its own synchronization context. Synchronization context is basically a place or location where code is being executed, however the whole concept is more complicated. Syncronization context is represented by SynchronizationContext class instance which can be obtained for current running thread using SynchronizationContext.Current property. SynchronizationContext can represent not only a thread's context, but also other "places" to execute code, such as certain CPU core. More information about syncronization contexts can be found [here][6].
+
+#### Await default behavior
+
+#### Typical usage
+Avoiding GUI applicaitons performance issues
+Avoiding deadlock issues
+
 ##Version Information
 **Universal Windows Platform**
 
@@ -59,4 +71,4 @@ Available since 8.1
 [3]: https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx
 [4]: https://msdn.microsoft.com/en-us/library/gg597391.aspx
 [5]: https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.configuredtaskawaitable(v=vs.110).aspx
-  
+[6]: https://msdn.microsoft.com/en-us/library/system.threading.synchronizationcontext(v=vs.110).aspx
