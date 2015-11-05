@@ -33,3 +33,4 @@ If you are looking for content to contribute to, there is a number of articles t
 |  Article  |  Link  |
 | :------ | :------ |
 |Design-Time Errors in the Windows Forms Designer|[Open](msdn-lib/Design-Time-Errors-in-the-Windows-Forms-Designer.md)|
+|How to: Get and Set the Current Cell in the Windows Forms DataGridView Control|[Open](msdn-lib/How-to-Get-and-Set-the-Current-Cell-in-the-Windows-Forms-DataGridView-Control.md)|
