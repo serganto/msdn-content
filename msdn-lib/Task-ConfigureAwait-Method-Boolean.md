@@ -5,9 +5,9 @@
 
 Configures an awaiter used to await this [Task][1].
 
-**Namespace: **
+**Namespace:**
 [System.Threading.Tasks][2]  
-**Assembly: **
+**Assembly:**
 mscorlib (in mscorlib.dll)
 
 ##Syntax

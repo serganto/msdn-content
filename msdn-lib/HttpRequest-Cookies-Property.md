@@ -5,9 +5,9 @@
 
 Gets a collection of cookies sent by the client.
 
-**Namespace: **
+**Namespace:**
 [System.Web][2]  
-**Assembly: **
+**Assembly:**
 System.Web (in System.Web.dll)
 ##Syntax
     public HttpCookieCollection Cookies { get; }

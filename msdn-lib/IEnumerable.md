@@ -7,9 +7,9 @@ Exposes an enumerator, which supports a simple iteration over a non-generic coll
 
 To browse the .NET Framework source code for this type, see the [Reference Source][2].
 
-**Namespace: **[System.Collections][3]  
+**Namespace:**[System.Collections][3]  
 
-**Assembly: **mscorlib (in mscorlib.dll)
+**Assembly:**mscorlib (in mscorlib.dll)
 
 ##Syntax
 
