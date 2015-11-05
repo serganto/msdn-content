@@ -35,3 +35,4 @@ If you are looking for content to contribute to, there is a number of articles t
 |Design-Time Errors in the Windows Forms Designer|[Open](msdn-lib/Design-Time-Errors-in-the-Windows-Forms-Designer.md)|
 |How to: Get and Set the Current Cell in the Windows Forms DataGridView Control|[Open](msdn-lib/How-to-Get-and-Set-the-Current-Cell-in-the-Windows-Forms-DataGridView-Control.md)|
 |User Input Validation in Windows Forms|[Open](msdn-lib/User-Input-Validation-in-Windows-Forms.md)|
+|How to: Bind a Windows Forms ComboBox or ListBox Control to Data|[Open](msdn-lib/How-to-Bind-a-Windows-Forms-ComboBox-or-ListBox-Control-to-Data.md)|
