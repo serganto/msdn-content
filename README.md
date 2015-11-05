@@ -44,3 +44,4 @@ If you are looking for content to contribute to, there is a number of articles t
 |  Article  |  Link  |
 | :------ | :------ |
 |IEnumerable Interface|[Open](msdn-lib/IEnumerable.md)|
+|How to: Read Text from a File|[Open](msdn-lib/How-to-Read-from-a-File.md)|
